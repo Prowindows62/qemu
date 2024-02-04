@@ -16,7 +16,11 @@ jobs:
 
     - name: Install python3-sphinx
       run: sudo apt-get install -y python3-sphinx
-    
+
+    - name: Install sphinx-rtd-theme
+      run: pip install sphinx-rtd-theme
+
+      
     - name: configure
       run: ./configure
 
