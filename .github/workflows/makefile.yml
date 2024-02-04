@@ -14,14 +14,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
-    - name: Create a folder
-      run: mkdir ./build
-
-    - name: cd
-      run: cd ./build
-    
     - name: configure
-      run: ../configure
+      run: ./configure
 
     - name: Install dependencies
       run: make
